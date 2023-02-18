@@ -1,5 +1,5 @@
 {% load static %}
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html>
 
 <head>
@@ -14,7 +14,7 @@
   <meta name="author" content="" /> 
   <link rel="shortcut icon" href="{% static 'website/images/s4.png' %}" type="image/x-icon">
 
-  <title>Thrine</title>
+  <title>Medical Center</title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="{% static 'website/css/bootstrap.css' %}" />
@@ -34,12 +34,12 @@
 <body>
   <div class="hero_area">
     <!-- header section strats -->
-    <header class="header_section">
+    <header class="header_section" id="Header">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="#Header">
             <h3>
-              Thrine
+              Medical Center
             </h3>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,28 +49,29 @@
           <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
             <ul class="navbar-nav  ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#Header">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> About </a>
+                <a class="nav-link" href="#About"> About </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="service.html"> Services </a>
+                <a class="nav-link" href="#Services"> Services </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="appointment.html"> Appointment </a>
+                <a class="nav-link" href="#Appointment"> Appointment </a>
               </li>
             </ul>
-            <form class="form-inline ">
+            <!-- <form class="form-inline ">
               <button class="btn nav_search-btn" type="submit">
                 <i class="fa fa-search" aria-hidden="true"></i>
               </button>
-            </form>
+            </form> -->
           </div>
         </nav>
       </div>
     </header>
     <!-- end header section -->
+
     <!-- slider section -->
     <section class=" slider_section position-relative">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -101,71 +102,14 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item ">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="detail-box">
-                    <div>
-                      <h1>
-                        health care
-                      </h1>
-                      <p>
-                        Excepturi quam cum ex, expedita inventore adipisci reprehenderit incidunt doloribus delectus quod, placeat nulla culpa nemo, mollitia natus! Beatae illo quas nemo omnis ullam placeat, obcaecati ducimus rem id. Consectetur.
-                      </p>
-                      <a href="">
-                        Read More
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="{% static 'website/images/slider-img.png' %}" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item ">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="detail-box">
-                    <div>
-                      <h1>
-                        health care
-                      </h1>
-                      <p>
-                        Excepturi quam cum ex, expedita inventore adipisci reprehenderit incidunt doloribus delectus quod, placeat nulla culpa nemo, mollitia natus! Beatae illo quas nemo omnis ullam placeat, obcaecati ducimus rem id. Consectetur.
-                      </p>
-                      <a href="">
-                        Read More
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="{% static 'website/images/slider-img.png' %}" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
       </div>
     </section>
     <!-- end slider section -->
+
   </div>
 
   <!-- special section -->
-
   <section class="special_section">
     <div class="container">
       <div class="special_container">
@@ -441,16 +385,15 @@
       </div>
     </div>
   </section>
-
   <!-- end special section -->
 
   <!-- about section -->
-  <section class="about_section layout_padding">
+  <section class="about_section layout_padding" id="About">
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
           <span class="design_dot"></span>
-          About Our Hospital
+          About Our Medical Center
         </h2>
       </div>
       <div class="col-md-7 mx-auto px-0">
@@ -471,12 +414,10 @@
       </div>
     </div>
   </section>
-
   <!-- end about section -->
 
   <!-- service section -->
-
-  <section class="service_section layout_padding-bottom">
+  <section class="service_section layout_padding-bottom" id="Services">
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
@@ -542,12 +483,10 @@
       </div>
     </div>
   </section>
-
   <!-- end service section -->
 
   <!-- book section -->
-
-  <section class="book_section layout_padding">
+  <section class="book_section layout_padding", id="Appointment">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -605,7 +544,6 @@
       </div>
     </div>
   </section>
-
   <!-- end book section -->
 
   <!-- client section -->
@@ -692,13 +630,13 @@
   <!-- end client section -->
 
   <!-- map section -->
-
   <section class="map_section">
     <div class="map">
-      <div id="googleMap"></div>
+      <div id="googleMap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d710.1395347060692!2d28.984488279626966!3d41.0369324676152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7650656bd63%3A0x8ca058b28c20b6c3!2zVGFrc2ltIFNxdWFyZSwgR8O8bcO8xZ9zdXl1LCAzNDQzNSBCZXlvxJ9sdS_EsHN0YW5idWwsIFTDvHJraXll!5e0!3m2!1sen!2s!4v1676746919310!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   </section>
-
   <!-- end map section -->
 
   <!-- info section -->
@@ -729,7 +667,7 @@
         <div class="col-md-3">
           <div class="info_course">
             <h5>
-              Thrine Hospital
+              Medical Center
             </h5>
             <p>
               There are many variations of passages of Lorem Ipsum available,
@@ -780,19 +718,15 @@
   </footer>
   <!-- footer section -->
 
-  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
-  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="{% static 'website/js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'website/js/bootstrap.js' %}"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <!-- nice select -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
   <!-- datepicker -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
   <!-- custom js -->
-  <script src="{% static 'js/custom.js' %}"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
+  <script src="{% static 'website/js/custom.js' %}"></script>
 </body>
 
 </html>
