@@ -13,12 +13,12 @@ $(document).ready(function () {
 });
 
 // date picker
-$(function () {
-    $("#inputDate").datepicker({
-        autoclose: true,
-        todayHighlight: true
-    }).datepicker('update', new Date());
-});
+// $(function () {
+//     $("#inputDate").datepicker({
+//         autoclose: true,
+//         todayHighlight: true
+//     }).datepicker('update', new Date());
+// });
 
 /** google_map js **/
 function myMap() {
